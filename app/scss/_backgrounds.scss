@@ -1,26 +1,52 @@
-.landingpage-background {
-    background-image: url("/images/headoffice/mobile1.png");
-    min-height: 40.875rem;
+.mainbg {
+    background-image: url("/images/mobile/mobile-website-binangonan-rural-bank-06-edited.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 57.9375rem;
 
-    @include breakpoint-up(medium) {
-        background-image: url("/images/headoffice/no_greenheader_birdbg_landingpage.png");
-        min-height: 62.1875rem;
+    @include breakpoint-up(large) {
+        background-image: url("/images/headoffice/website-binangonan-rural-bank-01.png");
     }
 }
+.historybg {
+    background-image: url("/images/mobile/mobile-website-binangonan-rural-bank-07-edited.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 64.9375rem;
+    @include breakpoint-up(large) {
+        min-height: 64.9375rem;
+        background-image: url("/images/headoffice/website-binangonan-rural-bank-02.png");
+    }
+}
+.whowearebg {
+    background-image: url("/images/mobile/mobile-website-binangonan-rural-bank-08-edited.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 57.9375rem;
 
-.history-bg {
-    background-image: url("/images/headoffice/mobile2.png");
-    min-height: 40.875rem;
+    @include breakpoint-up(large) {
+        min-height: 57.9375rem;
+        background-image: url("/images/headoffice/website-binangonan-rural-bank-03.png");
+    }
 }
-.birdgreen-bg {
-    background-image: url("/images/headoffice/mobile3.png");
-    min-height: 40.875rem;
+.ourteambg {
+    background-image: url("/images/mobile/mobile-website-binangonan-rural-bank-11.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 58.9375rem;
+    @include breakpoint-up(large) {
+        min-height: 58.125rem;
+        background-image: url("/images/headoffice/website-binangonan-rural-bank-06.png");
+    }
 }
-// .grassontop-bg {
-//     background-image: url("/images/headoffice/mobile4.png");
-//     min-height: 40.875rem;
-// }
-// .grassfooter-bg {
-//     background-image: url("/images/headoffice/mobile5.png");
-//     min-height: 40.875rem;
-// }
+.lastbg {
+    background-image: url("/images/mobile/mobile-website-binangonan-rural-bank-11.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 57.9375rem;
+}

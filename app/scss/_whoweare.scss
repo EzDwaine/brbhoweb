@@ -1,32 +1,42 @@
 .whoweare {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-
     &__text {
-        padding-top: 100px;
-        font-size: 65px;
-        color: $green;
-        font-family: "Open Sans", sans-serif;
-        letter-spacing: 4px;
-        font-weight: 600;
-        color: $cream;
+        h1 {
+            text-align: right;
+            color: $cream;
+        }
     }
     &__img {
-        order: 1;
-        position: relative;
+        // flex: 1;
+        // order: 1;
+        // position: relative;
+        // background-image: url("/images/headoffice/circle_brb_logo.png");
+        // background-size: contain;
+        // background-position: center center;
+        // background-repeat: no-repeat;
+        // width: 50%;
+        // min-height: 700px;
+        // flex: 1;
+
         background-image: url("/images/headoffice/circle_brb_logo.png");
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
+        min-height: 14.4375rem;
         width: 50%;
-        min-height: 700px;
-        flex: 1;
+
+        @include breakpoint-up(large) {
+            background-image: url("/images/headoffice/brb-logo1.png");
+            flex: 0 1 50%;
+            min-height: 51.01625rem;
+        }
     }
     &__p {
+        flex: 0 1 50%;
         order: 2;
-        flex: 1;
-        font-size: 20px;
         color: $cream;
+        font-size: 1.25rem;
     }
 }

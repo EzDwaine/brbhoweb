@@ -1,15 +1,27 @@
 .history {
+    @include breakpoint-up(large) {
+        display: flex;
+        flex-wrap: wrap;
+    }
     &__title {
-        padding-top: 100px;
-        font-size: 68px;
-        color: $green;
+        // padding-top: 100px;
+        // font-size: 68px;
         font-family: "Open Sans", sans-serif;
-        letter-spacing: 4px;
-        font-weight: 600;
+        // letter-spacing: 4px;
+        // font-weight: 600;
+        @include breakpoint-up(large) {
+            flex: 1 0 100%;
+        }
     }
 
     &__p {
-        margin-left: 600px;
-        font-size: 20px;
+        text-align: justify;
+        font-size: 12px;
+
+        @include breakpoint-up(large) {
+            flex: 0 1 100%;
+            font-size: 1.5rem;
+            padding-left: 40%;
+        }
     }
 }

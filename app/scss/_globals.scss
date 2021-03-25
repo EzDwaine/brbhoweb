@@ -9,9 +9,6 @@ html {
     box-sizing: inherit;
 }
 
-main {
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -22,7 +19,8 @@ body {
         overflow: hidden;
     }
 }
-
+main {
+}
 h1,
 h2,
 h3,
@@ -31,18 +29,121 @@ h5,
 p {
     margin: 0px;
 }
-.container {
-    // max-width: 23.4375rem; // 375px smallest phone width
-    min-width: 20rem;
-    max-width: 30rem; //480 px biggest phone width
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-
-    @include breakpoint-up(medium) {
-        min-width: 25.9375rem;
+h1 {
+    font-size: 1.375rem;
+    font-weight: 300px;
+    line-height: 1;
+    color: $green;
+    font-family: "Libre Baskerville", serif;
+    @include breakpoint-up(large) {
+        font-size: 3.375rem;
     }
 }
+.creamcolortext {
+    color: $cream;
+
+    @include breakpoint-up(medium) {
+        color: $green;
+    }
+
+    @include breakpoint-up(large) {
+        color: $cream;
+    }
+}
+a {
+    font-weight: 1000px;
+}
+p {
+    color: $gray;
+    font-size: 0.75rem;
+    text-align: left;
+    display: inline-block;
+
+    @include breakpoint-up(large) {
+        font-size: 2.5rem;
+    }
+}
+.container {
+    // max-width: 23.4375rem; // 375px smallest phone width
+    max-width: 113.1875rem;
+    margin: 0 auto;
+
+    &--ava {
+        padding: 8rem 0 0 0;
+    }
+    &--wwa {
+        padding-right: 3rem;
+    }
+    &--txtac {
+        text-align: center;
+    }
+    &--herop {
+        padding-top: 1.375rem;
+        padding-right: 4rem;
+        padding-bottom: 1.375rem;
+        padding-left: 4rem;
+    }
+    &--nopl {
+        padding-top: 1.375rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1.375rem;
+    }
+
+    &--noplnopt {
+        padding-right: 1.5rem;
+        padding-bottom: 1.375rem;
+    }
+    &--nopt {
+        padding-right: 1.5rem;
+        padding-bottom: 1.375rem;
+        padding-left: 1.5rem;
+    }
+    &--pall {
+        padding-top: 1.375rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1.375rem;
+        padding-left: 1.5rem;
+
+        @include breakpoint-up(large) {
+            padding-top: 4rem;
+            padding-bottom: 7.3125rem;
+        }
+    }
+    &--py {
+        padding-top: 1.375rem;
+        padding-bottom: 1.375rem;
+
+        @include breakpoint-up(large) {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    }
+    &--px {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    &--pt {
+        padding-top: 1.375rem;
+
+        @include breakpoint-up(large) {
+            padding-top: 6rem;
+        }
+    }
+    &--pr {
+        padding-right: 1.5rem;
+    }
+    &--pb {
+        padding-bottom: 1.375rem;
+
+        @include breakpoint-up(large) {
+            padding-bottom: 6rem;
+        }
+    }
+    &--pl {
+        padding-left: 1.5rem;
+    }
+}
+
 .whoweare-container {
     flex-grow: 1;
 }
@@ -56,8 +157,15 @@ a:hover {
 .flex {
     display: flex;
 
+    &-fd-c {
+        flex-direction: column;
+    }
+
     &-jc-sb {
         justify-content: space-between;
+    }
+    &-jc-sa {
+        justify-content: space-around;
     }
 
     &-jc-c {
