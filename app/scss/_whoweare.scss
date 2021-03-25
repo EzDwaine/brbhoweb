@@ -2,10 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
     &__text {
         h1 {
-            text-align: right;
             color: $cream;
+        }
+
+        @include breakpoint-up(large) {
+            text-align: right;
         }
     }
     &__img {
@@ -25,7 +29,7 @@
         background-position: center center;
         background-repeat: no-repeat;
         min-height: 14.4375rem;
-        width: 50%;
+        flex: 1 100%;
 
         @include breakpoint-up(large) {
             background-image: url("/images/headoffice/brb-logo1.png");
@@ -34,7 +38,7 @@
         }
     }
     &__p {
-        flex: 0 1 50%;
+        flex: 1 100%;
         order: 2;
         color: $cream;
         font-size: 1.25rem;
