@@ -618,7 +618,7 @@ button,
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  min-height: 14.4375rem;
+  min-height: 15.4375rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 100%;
           flex: 1 100%;
@@ -635,6 +635,9 @@ button,
 }
 
 .whoweare__p {
+  padding-top: 5rem;
+  font-size: 14px;
+  text-align: justify;
   -webkit-box-flex: 1;
       -ms-flex: 1 100%;
           flex: 1 100%;
@@ -642,7 +645,15 @@ button,
       -ms-flex-order: 2;
           order: 2;
   color: #ffffb0;
-  font-size: 1.25rem;
+}
+
+@media (min-width: 64em) {
+  .whoweare__p {
+    font-size: 1.25rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 50%;
+            flex: 1 50%;
+  }
 }
 
 .avatar {

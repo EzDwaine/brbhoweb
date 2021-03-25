@@ -28,7 +28,7 @@
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
-        min-height: 14.4375rem;
+        min-height: 15.4375rem;
         flex: 1 100%;
 
         @include breakpoint-up(large) {
@@ -38,9 +38,15 @@
         }
     }
     &__p {
+        padding-top: 5rem;
+        font-size: 14px;
+        text-align: justify;
         flex: 1 100%;
         order: 2;
         color: $cream;
-        font-size: 1.25rem;
+        @include breakpoint-up(large) {
+            font-size: 1.25rem;
+            flex: 1 50%;
+        }
     }
 }
