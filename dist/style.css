@@ -610,6 +610,7 @@ button,
 @media (min-width: 64em) {
   .whoweare__text {
     text-align: right;
+    padding-right: 3rem;
   }
 }
 
