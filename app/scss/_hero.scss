@@ -1,0 +1,32 @@
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__text {
+        font-size: 40px;
+        color: $green;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 3px;
+        margin: 0;
+        width: 100%;
+    }
+
+    &__p {
+        flex: 3 0 50%;
+        color: $gray;
+        font-size: 35px;
+        margin: 0;
+    }
+
+    &__image {
+        background-image: url("/images/headoffice/50yrs_hero.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 28rem;
+        max-width: 100%;
+        padding-right: 3%;
+    }
+}

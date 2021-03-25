@@ -1,0 +1,15 @@
+.history {
+    &__title {
+        padding-top: 100px;
+        font-size: 68px;
+        color: $green;
+        font-family: "Open Sans", sans-serif;
+        letter-spacing: 4px;
+        font-weight: 600;
+    }
+
+    &__p {
+        margin-left: 600px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,26 @@
+.landingpage-background {
+    background-image: url("/images/headoffice/mobile1.png");
+    min-height: 40.875rem;
+
+    @include breakpoint-up(medium) {
+        background-image: url("/images/headoffice/no_greenheader_birdbg_landingpage.png");
+        min-height: 62.1875rem;
+    }
+}
+
+.history-bg {
+    background-image: url("/images/headoffice/mobile2.png");
+    min-height: 40.875rem;
+}
+.birdgreen-bg {
+    background-image: url("/images/headoffice/mobile3.png");
+    min-height: 40.875rem;
+}
+// .grassontop-bg {
+//     background-image: url("/images/headoffice/mobile4.png");
+//     min-height: 40.875rem;
+// }
+// .grassfooter-bg {
+//     background-image: url("/images/headoffice/mobile5.png");
+//     min-height: 40.875rem;
+// }
