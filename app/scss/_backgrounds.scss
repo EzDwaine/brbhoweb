@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center center;
     min-height: 57.9375rem;
-
+    object-fit: contain;
     @include breakpoint-up(large) {
         background-image: url("/images/headoffice/website-binangonan-rural-bank-01.png");
     }

@@ -3,10 +3,10 @@
     // styles go here
 }
 
-// 640px, 1024px, 1400px
+// 280px, 415px, 1024px, 1400px
 $breakpoints-up: (
+    "small": "17.5rem",
     "medium": "25.9375rem",
-    //415 smallest tablet
     "large": "64em",
     "xlarge": "87.5em",
 );
