@@ -112,8 +112,8 @@ p {
         }
     }
     &--py {
-        padding-top: 1.375rem;
-        padding-bottom: 1.375rem;
+        padding-top: 1.875rem;
+        padding-bottom: 1.875rem;
 
         @include breakpoint-up(large) {
             padding-top: 2rem;

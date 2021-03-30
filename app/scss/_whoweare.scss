@@ -48,6 +48,7 @@
         @include breakpoint-up(large) {
             font-size: 1.25rem;
             flex: 1 50%;
+            padding-left: 3%;
         }
     }
 }
