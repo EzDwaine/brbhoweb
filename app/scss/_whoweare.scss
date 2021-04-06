@@ -1,18 +1,13 @@
 .whoweare {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
-    &__text {
-        h1 {
-            color: $cream;
-        }
-
-        @include breakpoint-up(large) {
-            text-align: right;
-            padding-right: 3rem;
-        }
+    h1 {
+        font-size: 4rem;
+        color: $cream;
     }
+    &__text {
+        flex: 1 0 100%;
+        text-align: right;
+    }
+
     &__img {
         // flex: 1;
         // order: 1;
@@ -24,31 +19,33 @@
         // width: 50%;
         // min-height: 700px;
         // flex: 1;
-
+        flex: 1 0 50%;
         background-image: url("/images/headoffice/circle_brb_logo.png");
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
         min-height: 15.4375rem;
-        flex: 1 100%;
 
         @include breakpoint-up(large) {
             background-image: url("/images/headoffice/brb-logo1.png");
-            flex: 0 1 50%;
-            min-height: 51.01625rem;
+            min-height: 31.875rem;
         }
     }
     &__p {
-        padding-top: 5rem;
-        font-size: 14px;
         text-align: justify;
         flex: 1 100%;
         order: 2;
         color: $cream;
+
         @include breakpoint-up(large) {
-            font-size: 1.25rem;
-            flex: 1 50%;
-            padding-left: 3%;
+            font-size: 1rem;
+            flex: 1 0 50%;
+        }
+
+        @include breakpoint-up(larger) {
+            padding-top: 5rem;
+            font-size: 1.2rem;
+            flex: 1 0 50%;
         }
     }
 }

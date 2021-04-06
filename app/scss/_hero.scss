@@ -1,24 +1,17 @@
 .hero {
-    @include breakpoint-up(large) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+    h1 {
+        color: $green;
+        font-family: "Libre Baskerville", serif;
     }
     &__text {
         flex: 1 100%;
     }
 
     &__p {
-        font-size: 0.75rem;
         order: 2;
         flex: 1 0 30%;
-        @include breakpoint-up(large) {
-            padding: 0;
-            font-size: 2.5rem;
-            padding-left: 1.5rem;
-            text-align: left;
-        }
+        text-align: left;
+        color: $gray;
     }
 
     &__image {
@@ -28,12 +21,11 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
-        min-height: 10.75rem;
+        min-height: 11.75rem;
 
         @include breakpoint-up(large) {
             min-height: 31.875rem;
-            background-position: center center;
-            background-size: 70%;
+            background-size: 80%;
         }
     }
 }

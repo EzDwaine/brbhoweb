@@ -1,16 +1,14 @@
 .mainbg {
-  background-image: url("/images/mobile/mobile-website-binangonan-rural-bank-06-edited.png");
+  background-image: url("/images/mobile/mobilebg1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  min-height: 57.9375rem;
-  -o-object-fit: contain;
-     object-fit: contain;
+  background-position: top center;
+  min-height: 100vh;
 }
 
 @media (min-width: 64em) {
   .mainbg {
-    background-image: url("/images/headoffice/website-binangonan-rural-bank-01.png");
+    background-image: url("/images/headoffice/orangebird-landingpage-edited.png");
   }
 }
 
@@ -18,13 +16,12 @@
   background-image: url("/images/mobile/mobile-website-binangonan-rural-bank-07-edited.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  min-height: 64.9375rem;
+  background-position: top left;
+  min-height: 100vh;
 }
 
 @media (min-width: 64em) {
   .historybg {
-    min-height: 64.9375rem;
     background-image: url("/images/headoffice/website-binangonan-rural-bank-02.png");
   }
 }
@@ -33,14 +30,13 @@
   background-image: url("/images/mobile/mobile-website-binangonan-rural-bank-08-edited.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  min-height: 57.9375rem;
+  background-position: top center;
+  min-height: 100vh;
 }
 
 @media (min-width: 64em) {
   .whowearebg {
-    min-height: 57.9375rem;
-    background-image: url("/images/headoffice/website-binangonan-rural-bank-03.png");
+    background-image: url("/images/headoffice/website-binangonan-rural-bank-03-edited.png");
   }
 }
 
@@ -48,23 +44,28 @@
   background-image: url("/images/mobile/mobile-website-binangonan-rural-bank-11.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  min-height: 58.9375rem;
+  background-position: top center;
+  min-height: 100vh;
 }
 
 @media (min-width: 64em) {
   .ourteambg {
-    min-height: 58.125rem;
-    background-image: url("/images/headoffice/website-binangonan-rural-bank-06.png");
+    background-image: url("/images/headoffice/website-binangonan-rural-bank-04.png");
   }
 }
 
 .lastbg {
-  background-image: url("/images/mobile/mobile-website-binangonan-rural-bank-11.png");
+  background-image: url("/images/mobile/mobile-website-binangonan-rural-bank-05.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  min-height: 57.9375rem;
+  background-position: top center;
+  min-height: 100vh;
+}
+
+@media (min-width: 64em) {
+  .lastbg {
+    background-image: url("/images/headoffice/website-binangonan-rural-bank-05.png");
+  }
 }
 
 .has-fade {
@@ -176,17 +177,10 @@ p {
 }
 
 h1 {
-  font-size: 1.375rem;
-  font-weight: 300px;
+  font-family: "Roboto", sans-serif;
   line-height: 1;
   color: #006837;
-  font-family: "Libre Baskerville", serif;
-}
-
-@media (min-width: 64em) {
-  h1 {
-    font-size: 3.375rem;
-  }
+  font-weight: 300px;
 }
 
 .creamcolortext {
@@ -210,19 +204,11 @@ a {
 }
 
 p {
-  color: #666666;
-  font-size: 0.75rem;
   display: inline-block;
 }
 
-@media (min-width: 64em) {
-  p {
-    font-size: 2.5rem;
-  }
-}
-
 .container {
-  max-width: 113.1875rem;
+  max-width: 90rem;
   margin: 0 auto;
 }
 
@@ -234,15 +220,18 @@ p {
   padding-right: 3rem;
 }
 
-.container--txtac {
-  text-align: center;
-}
-
 .container--herop {
   padding-top: 1.375rem;
   padding-right: 4rem;
   padding-bottom: 1.375rem;
   padding-left: 4rem;
+}
+
+@media (min-width: 17.5rem) {
+  .container--herop {
+    padding-top: 1.375rem;
+    padding-bottom: 1.375rem;
+  }
 }
 
 .container--nopl {
@@ -256,27 +245,23 @@ p {
   padding-bottom: 1.375rem;
 }
 
-@media (min-width: 17.5rem) {
-  .container--nopt {
-    padding-right: 1.5rem;
-    padding-bottom: 1.375rem;
-    padding-left: 1.5rem;
-  }
+.container--brbtext {
+  padding-top: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.375rem;
+  padding-left: 1.5rem;
+}
+
+.container--histotitle {
+  padding-top: 2.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.375rem;
+  padding-left: 1.5rem;
 }
 
 @media (min-width: 17.5rem) {
   .container--pall {
-    padding-top: 1.375rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1.375rem;
-    padding-left: 1.5rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .container--pall {
-    padding-top: 4rem;
-    padding-bottom: 7.3125rem;
+    padding: 0;
   }
 }
 
@@ -303,7 +288,7 @@ p {
 
 @media (min-width: 64em) {
   .container--pt {
-    padding-top: 6rem;
+    padding-top: 5.5rem;
   }
 }
 
@@ -343,6 +328,12 @@ a:hover {
   display: flex;
 }
 
+.flex-ai-fe {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .flex-fd-c {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -371,6 +362,11 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.flex-fw-w {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 button,
@@ -498,20 +494,9 @@ button,
   opacity: 1;
 }
 
-@media (min-width: 64em) {
-  .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+.hero h1 {
+  color: #006837;
+  font-family: "Libre Baskerville", serif;
 }
 
 .hero__text {
@@ -521,22 +506,14 @@ button,
 }
 
 .hero__p {
-  font-size: 0.75rem;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 30%;
           flex: 1 0 30%;
-}
-
-@media (min-width: 64em) {
-  .hero__p {
-    padding: 0;
-    font-size: 2.5rem;
-    padding-left: 1.5rem;
-    text-align: left;
-  }
+  text-align: left;
+  color: #666666;
 }
 
 .hero__image {
@@ -550,100 +527,74 @@ button,
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 10.75rem;
+  min-height: 11.75rem;
 }
 
 @media (min-width: 64em) {
   .hero__image {
     min-height: 31.875rem;
-    background-position: center center;
-    background-size: 70%;
+    background-size: 80%;
   }
 }
 
-@media (min-width: 64em) {
-  .history {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+.history h1 {
+  font-size: 4rem;
+  font-weight: 300px;
+  font-family: "Roboto", sans-serif;
 }
 
 .history__title {
-  font-family: "Open Sans", sans-serif;
-}
-
-@media (min-width: 64em) {
-  .history__title {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 100%;
-            flex: 1 0 100%;
-  }
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  letter-spacing: 1.5px;
 }
 
 .history__p {
-  text-align: justify;
-  font-size: 12px;
+  color: black;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  font-size: 1rem;
 }
 
-@media (min-width: 64em) {
-  .history__p {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
-    font-size: 1.5rem;
-    padding-left: 40%;
-  }
+.history__image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
 }
 
-.whoweare {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.whoweare__text h1 {
+.whoweare h1 {
+  font-size: 4rem;
   color: #ffffb0;
 }
 
-@media (min-width: 64em) {
-  .whoweare__text {
-    text-align: right;
-    padding-right: 3rem;
-  }
+.whoweare__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  text-align: right;
 }
 
 .whoweare__img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
   background-image: url("/images/headoffice/circle_brb_logo.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   min-height: 15.4375rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 100%;
-          flex: 1 100%;
 }
 
 @media (min-width: 64em) {
   .whoweare__img {
     background-image: url("/images/headoffice/brb-logo1.png");
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 50%;
-            flex: 0 1 50%;
-    min-height: 51.01625rem;
+    min-height: 31.875rem;
   }
 }
 
 .whoweare__p {
-  padding-top: 5rem;
-  font-size: 14px;
   text-align: justify;
   -webkit-box-flex: 1;
       -ms-flex: 1 100%;
@@ -656,11 +607,31 @@ button,
 
 @media (min-width: 64em) {
   .whoweare__p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     -webkit-box-flex: 1;
-        -ms-flex: 1 50%;
-            flex: 1 50%;
-    padding-left: 3%;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+}
+
+@media (min-width: 87.5em) {
+  .whoweare__p {
+    padding-top: 5rem;
+    font-size: 1.2rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+}
+
+.ourteam h1 {
+  font-size: 4rem;
+  color: #ffffb0;
+}
+
+@media (min-width: 87.5em) {
+  .ourteam h1 {
+    padding-bottom: 1rem;
   }
 }
 
@@ -684,12 +655,12 @@ button,
     -webkit-box-flex: 1;
         -ms-flex: 1 0 50%;
             flex: 1 0 50%;
-    padding-top: 7.5rem;
+    padding-top: 10.5rem;
   }
 }
 
 .avatar_card_2 {
-  padding: 2%;
+  padding: 4%;
   -webkit-box-flex: 1;
       -ms-flex: 1 46%;
           flex: 1 46%;
@@ -728,7 +699,6 @@ button,
 
 @media (min-width: 64em) {
   .avatar_img_ken {
-    padding: 8rem 0 0 0;
     min-height: 31.875rem;
   }
 }
