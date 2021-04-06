@@ -39,13 +39,15 @@
 
         @include breakpoint-up(large) {
             font-size: 1rem;
-            flex: 1 0 50%;
+            flex: 1 0 45%;
+            padding-right: 5%;
         }
 
         @include breakpoint-up(larger) {
             padding-top: 5rem;
             font-size: 1.2rem;
-            flex: 1 0 50%;
+            flex: 1 0 45%;
+            padding-right: 5%;
         }
     }
 }

@@ -609,8 +609,9 @@ button,
   .whoweare__p {
     font-size: 1rem;
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 50%;
-            flex: 1 0 50%;
+        -ms-flex: 1 0 45%;
+            flex: 1 0 45%;
+    padding-right: 5%;
   }
 }
 
@@ -619,8 +620,9 @@ button,
     padding-top: 5rem;
     font-size: 1.2rem;
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 50%;
-            flex: 1 0 50%;
+        -ms-flex: 1 0 45%;
+            flex: 1 0 45%;
+    padding-right: 5%;
   }
 }
 
@@ -760,6 +762,7 @@ button,
 }
 
 .avatar_img_vac {
+  background-image: url("/images/headoffice/joel.jpg");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -806,6 +809,40 @@ button,
   .avatar_info h4 {
     font-size: 1.125rem;
   }
+}
+
+.bg-modal {
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.modal-content {
+  width: auto;
+  z-index: 3;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 14px;
+  font-size: 42px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
 }
 
 .footer {

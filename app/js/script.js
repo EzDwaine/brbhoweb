@@ -4,6 +4,9 @@ const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
 const fadeElems = document.querySelectorAll('.has-fade');
 
+const btnClose = document.querySelector('.close');
+const bgModal = document.querySelector('.bg-modal');
+
 //Hamburger Animation
 btnHamburger.addEventListener('click', function () {
     console.log("clicking hamburger");
@@ -27,3 +30,7 @@ btnHamburger.addEventListener('click', function () {
     }
 
 })
+btnClose.addEventListener('click', function () {
+    bgModal.style.display = "none";
+
+});
