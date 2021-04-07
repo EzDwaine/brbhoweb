@@ -1,0 +1,23 @@
+.feature {
+    &__item {
+        padding: 2%;
+    }
+    &__icon {
+        background-image: url("/images/headoffice/featureicon1.png");
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        flex: 1 0 20%;
+        min-height: 12.25rem;
+    }
+
+    &__desc {
+        flex: 1 0 80%;
+        h1 {
+            padding-bottom: 0.5rem;
+        }
+        p {
+            font-size: 1.3rem;
+        }
+    }
+}
